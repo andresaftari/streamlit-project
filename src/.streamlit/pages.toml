@@ -1,4 +1,14 @@
 [[pages]]
+path = "streamlit_app.py"
+title = "Home"
+icon = ":house:"
+
+[[pages]]
+title = "Example Code"
+icon = ":python:"
+is_sections = true
+
+[[pages]]
 path = "pages/tugas_mod_1.py"
 title = "Tugas Modul 1 - Pengenalan Python"
 icon = ":python:"

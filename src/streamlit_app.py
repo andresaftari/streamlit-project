@@ -1,4 +1,15 @@
+from pathlib2 import Path
 import streamlit as st
+from st_pages import Page, Section, add_page_title, show_pages
 
 st.title('Hola, welcome to Andzzz Streamlit!')
+st.code(Path('.streamlit/pages.toml').read_text(), language='toml')
 
+show_pages(
+    [
+        Page('streamlit_app.py', "Home", '🏠'),
+        # The section itself will look like a normal page, but it won't be clickable
+        Section(name='Example Code', icon=':python:'),
+        Page('pages/tugas_mod_1.py', 'Pengenalan Python', ':python:'),
+    ]
+)
