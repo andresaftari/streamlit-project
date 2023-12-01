@@ -1,9 +1,7 @@
-from pathlib2 import Path
 import streamlit as st
 from st_pages import Page, Section, add_page_title, show_pages
 
 st.title('Hola, welcome to Andzzz Streamlit!')
-st.code(Path('.streamlit/pages.toml').read_text(), language='toml')
 
 show_pages(
     [
